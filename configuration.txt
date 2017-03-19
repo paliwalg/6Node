@@ -1,0 +1,90 @@
+Constellation PubKey
+
+Issuing Bank  BULeR8JyUWhiuuCMU/HLA0Q5pzkYT+cHII3ZKBey3Bo=
+Advising Bank QfeDAys9MPDs2XHExtc84jKGHxZg/aj52DTh0vtA3Xc=
+Importer      1iTZde/ndBHvzhcl7V68x44Vx7pl8nwx9LqnM/AfJUg=
+Exporter      oNspPPgszVUFw0qmGFfWwh1uxVUXgvBxleXORHj07g8=
+Carrier       R56gy4dn24YOjwyesTczYa8m5xhP6hF2uTMCju/1xkY=
+
+UfNSeSGySeKg11DVNEnqrUtxYRVor4+CvluI8tVv62Y=
+
+
+"BULeR8JyUWhiuuCMU/HLA0Q5pzkYT+cHII3ZKBey3Bo=","QfeDAys9MPDs2XHExtc84jKGHxZg/aj52DTh0vtA3Xc=","1iTZde/ndBHvzhcl7V68x44Vx7pl8nwx9LqnM/AfJUg=","oNspPPgszVUFw0qmGFfWwh1uxVUXgvBxleXORHj07g8=","R56gy4dn24YOjwyesTczYa8m5xhP6hF2uTMCju/1xkY="
+
+
+AccountKeys
+
+	0xed9d02e382b34818e88b88a309c7fe71e65f419d
+0x21deed0118b3feebe3b4a52df530cd226f5266d9
+
+	0x0fbdc686b912d7722dc86510934589e0aaf3b55a
+	0xca843569e3427144cead5e4d5999a3d0ccf92b8e
+
+	0x9186eb3d20cbd1f5f992a950d808c4495153abd5
+	0x1623b3138c1a38ccd8dd40702c90f5ba9a4d5b90
+
+	0x0638e1574728b6d862dd5d3a3e0942c3be47d996
+	0xd449422aca44c9c17aa59c1cefe97c3b93638c0f
+
+0xafe6f7da56b6b21930c880565e00aa996b315cd2
+	0xb96bd1c6d2a9788a47f0d54d4daa38b587b6b2cc
+
+0xbd40abe8943345b4886302553703141e0c8ae968
+0xdddd26dfddc27e81ea91b9f142c41ce51c370e68
+
+
+
+
+0x84ce5fd849e0495cc50ccfbec1c0362977c2cf2bfecfa5257fa7d700f90c20e0
+0x3ea7c5532e8c142781b392a84ab8e2da937b8d18
+
+var address = "0xa0518eb93372f69a460c06c33e4f8d7f40b20502"
+var abi = [        {            "constant": true,            "inputs": [                {                    "name": "",                    "type": "bytes32"                }            ],            "name": "FinancialStrengthIndicators",            "outputs": [                {                    "name": "netWorthIndicator",                    "type": "int8"                },                {                    "name": "netWorthFrom",                    "type": "string"                },                {                    "name": "netWorthTo",                    "type": "string"                }            ],            "payable": false,            "type": "function"        },        {            "constant": false,            "inputs": [                {                    "name": "countryName",                    "type": "bytes32"                }            ],            "name": "isInHighRiskCountry",            "outputs": [                {                    "name": "result",                    "type": "bool"                }            ],            "payable": false,            "type": "function"        },        {            "constant": false,            "inputs": [                {                    "name": "countryName",                    "type": "bytes32"                }            ],            "name": "addHighRiskCountry",            "outputs": [],            "payable": false,            "type": "function"        },        {            "constant": true,            "inputs": [],            "name": "getBankDetails",            "outputs": [                {                    "name": "bankBCCId",                    "type": "address"                },                {                    "name": "bankBCId",                    "type": "address"                },                {                    "name": "name",                    "type": "bytes32"                },                {                    "name": "address1",                    "type": "bytes32"                },                {                    "name": "address2",                    "type": "bytes32"                }            ],            "payable": false,            "type": "function"        },        {            "constant": true,            "inputs": [                {                    "name": "",                    "type": "uint256"                }            ],            "name": "ratings",            "outputs": [                {                    "name": "",                    "type": "bytes32"                }            ],            "payable": false,            "type": "function"        },        {            "constant": false,            "inputs": [                {                    "name": "_allowedMaxRiskIndicator",                    "type": "uint256"                }            ],            "name": "setAllowedMaxRiskIndicator",            "outputs": [],            "payable": false,            "type": "function"        },        {            "constant": false,            "inputs": [                {                    "name": "_name",                    "type": "bytes32"                },                {                    "name": "_bankAddress1",                    "type": "bytes32"                },                {                    "name": "_bankAddress2",                    "type": "bytes32"                },                {                    "name": "_bankBCCId",                    "type": "address"                },                {                    "name": "_bankBCId",                    "type": "address"                }            ],            "name": "addBankDetails",            "outputs": [],            "payable": false,            "type": "function"        },        {            "constant": false,            "inputs": [                {                    "name": "_allowedRating",                    "type": "bytes32"                }            ],            "name": "setAllowedRating",            "outputs": [],            "payable": false,            "type": "function"        },        {            "constant": true,            "inputs": [                {                    "name": "_corporateRiskIndicator",                    "type": "uint256"                }            ],            "name": "isRiskIndicatorOK",            "outputs": [                {                    "name": "",                    "type": "bool"                }            ],            "payable": false,            "type": "function"        },        {            "constant": true,            "inputs": [                {                    "name": "_corporateRating",                    "type": "bytes32"                }            ],            "name": "isCreditRatingOk",            "outputs": [                {                    "name": "",                    "type": "bool"                }            ],            "payable": false,            "type": "function"        },        {            "constant": false,            "inputs": [                {                    "name": "_dunsNumber",                    "type": "uint256"                },                {                    "name": "_allowedMaxRiskIndicator",                    "type": "uint256"                },                {                    "name": "_allowedRating",                    "type": "bytes32"                }            ],            "name": "addRiskComplianceData",            "outputs": [],            "payable": false,            "type": "function"        },        {            "constant": true,            "inputs": [],            "name": "riskAndComplianceData",            "outputs": [                {                    "name": "dunsNumber",                    "type": "uint256"                },                {                    "name": "allowedMaxRiskIndicator",                    "type": "uint256"                },                {                    "name": "allowedRating",                    "type": "bytes32"                }            ],            "payable": false,            "type": "function"        },        {            "constant": true,            "inputs": [                {                    "name": "",                    "type": "uint256"                }            ],            "name": "highRiskCountry",            "outputs": [                {                    "name": "",                    "type": "bytes32"                }            ],            "payable": false,            "type": "function"        },        {            "constant": false,            "inputs": [                {                    "name": "_rating",                    "type": "bytes32"                },                {                    "name": "_indicator",                    "type": "int8"                },                {                    "name": "_netWorthFrom",                    "type": "string"                },                {                    "name": "_netWorthTo",                    "type": "string"                }            ],            "name": "addFinancialStrengthIndicators",            "outputs": [],            "payable": false,            "type": "function"        }    ];
+contractOb = eth.contract(abi).at(address);
+contractOb.getBankDetails();
+
+var address = "0x24b4ddedcf1de21f313bc6cc6add0bcef42b3b37";
+var abi = [        {            "constant": false,            "inputs": [                {                    "name": "_participantBCId",                    "type": "address"                },                {                    "name": "_participantBCCId",                    "type": "address"                }            ],            "name": "addParticipantData",            "outputs": [],            "payable": false,            "type": "function"        },        {            "constant": false,            "inputs": [                {                    "name": "_bankName",                    "type": "bytes32"                },                {                    "name": "_bankAddress1",                    "type": "bytes32"                },                {                    "name": "_bankAddress2",                    "type": "bytes32"                },                {                    "name": "_bankBCId",                    "type": "address"                }            ],            "name": "addBankAsParticipant",            "outputs": [],            "payable": false,            "type": "function"        },        {            "constant": false,            "inputs": [                {                    "name": "_corporateName",                    "type": "bytes32"                },                {                    "name": "_corporateAddress1",                    "type": "bytes32"                },                {                    "name": "_corporateAddress2",                    "type": "bytes32"                },                {                    "name": "_corporateBCId",                    "type": "address"                }            ],            "name": "addCorporateAsParticipant",            "outputs": [],            "payable": false,            "type": "function"        },        {            "constant": false,            "inputs": [                {                    "name": "_bankName",                    "type": "bytes32"                },                {                    "name": "_bankAddress1",                    "type": "bytes32"                },                {                    "name": "_bankAddress2",                    "type": "bytes32"                },                {                    "name": "_bankBCId",                    "type": "address"                }            ],            "name": "addBankDataToContract",            "outputs": [],            "payable": false,            "type": "function"        },        {            "constant": false,            "inputs": [                {                    "name": "_corporateName",                    "type": "bytes32"                },                {                    "name": "_corporateAddress1",                    "type": "bytes32"                },                {                    "name": "_corporateAddress2",                    "type": "bytes32"                },                {                    "name": "_corporateBCId",                    "type": "address"                }            ],            "name": "addCorporateDataToContract",            "outputs": [],            "payable": false,            "type": "function"        },        {            "constant": true,            "inputs": [                {                    "name": "_participantBCId",                    "type": "address"                }            ],            "name": "checkParticipantExist",            "outputs": [                {                    "name": "",                    "type": "bool"                }            ],            "payable": false,            "type": "function"        },        {            "constant": true,            "inputs": [                {                    "name": "_participantBCId",                    "type": "address"                }            ],            "name": "getParticipantContractAddressFrom",            "outputs": [                {                    "name": "participantBCCId",                    "type": "address"                }            ],            "payable": false,            "type": "function"        },        {            "anonymous": false,            "inputs": [                {                    "indexed": false,                    "name": "corporateBCId",                    "type": "address"                },                {                    "indexed": false,                    "name": "corporateName",                    "type": "bytes32"                },                {                    "indexed": false,                    "name": "corporateBCCId",                    "type": "address"                }            ],            "name": "CorporateCreated",            "type": "event"        },        {            "anonymous": false,            "inputs": [                {                    "indexed": false,                    "name": "bankBCId",                    "type": "address"                },                {                    "indexed": false,                    "name": "bankName",                    "type": "bytes32"                },                {                    "indexed": false,                    "name": "bankBCCId",                    "type": "address"                }            ],            "name": "BankCreated",            "type": "event"        }    ]
+
+
+var contractOb = eth.contract(abi).at(address);
+contractOb.addBankAsParticipant("test bank", "bankAddress1", "bankAddress2","0xa99f4994640299a36b029b9a32598ac2b4c7fb82"
+,{from:web3.eth.coinbase,privateFor:["BULeR8JyUWhiuuCMU/HLA0Q5pzkYT+cHII3ZKBey3Bo="
+//,"QfeDAys9MPDs2XHExtc84jKGHxZg/aj52DTh0vtA3Xc=","1iTZde/ndBHvzhcl7V68x44Vx7pl8nwx9LqnM/AfJUg=","oNspPPgszVUFw0qmGFfWwh1uxVUXgvBxleXORHj07g8=","R56gy4dn24YOjwyesTczYa8m5xhP6hF2uTMCju/1xkY="
+]}
+, function(e, contract) {
+  if (e) {
+    console.log("err creating contract", e);
+  } else {
+    if (!contract.address) {
+      console.log("Contract transaction send: TransactionHash: " + contract.transactionHash + " waiting to be mined...");
+    } else {
+      console.log("Contract mined! Address: " + contract.address);
+      console.log(contract);
+    }
+  }
+});
+
+
+var address = "0x6a8331ace0824d4c7872f6d2618b45a42f887798";
+var abi = [        {            "constant": true,            "inputs": [                {                    "name": "_customerBCId",                    "type": "address"                }            ],            "name": "getParticipantContractAddressFrom",            "outputs": [                {                    "name": "customerBCCId",                    "type": "address"                }            ],            "payable": false,            "type": "function"        },        {            "constant": false,            "inputs": [                {                    "name": "_CorporateID",                    "type": "bytes32"                },                {                    "name": "_LegalName",                    "type": "bytes32"                },                {                    "name": "_EntityStructure",                    "type": "bytes32"                },                {                    "name": "_Ownership",                    "type": "bytes32"                },                {                    "name": "_customerBCId",                    "type": "address"                }            ],            "name": "addCustomer",            "outputs": [],            "payable": false,            "type": "function"        }    ];
+
+var contractOb = eth.contract(abi).at(address);
+contractOb.addCustomer("3252FGH","Shell UK Pty Ltd","Public Listed","Wholly Listed",web3.eth.coinbase,{from:web3.eth.coinbase, 
+	gas: 98000000, privateFor: ["BULeR8JyUWhiuuCMU/HLA0Q5pzkYT+cHII3ZKBey3Bo="
+,"QfeDAys9MPDs2XHExtc84jKGHxZg/aj52DTh0vtA3Xc=","1iTZde/ndBHvzhcl7V68x44Vx7pl8nwx9LqnM/AfJUg=","oNspPPgszVUFw0qmGFfWwh1uxVUXgvBxleXORHj07g8=","R56gy4dn24YOjwyesTczYa8m5xhP6hF2uTMCju/1xkY="
+]}); function(e, contract) {
+  if (e) {
+    console.log("err creating contract", e);
+  } else {
+    if (!contract.address) {
+      console.log("Contract transaction send: TransactionHash: " + contract.transactionHash + " waiting to be mined...");
+    } else {
+      console.log("Contract mined! Address: " + contract.address);
+      console.log(contract);
+    }
+  }
+});
+
+
+eth.getTransactionReceipt("0xcf39e4877e57e5f6e819832ea9afbb3a863fb0f77d156147ab2933177bb09125");
